@@ -2,8 +2,8 @@
   "VersionMajor" : 23,
   "PresetList" : [
     {
-      "PresetName" : "Roku - 1080p - Animation",
-      "PresetDescription" : "Settings optimized for use with the Roku for traditional hand drawn animation.\\n\\nDo NOT use these settings with 3D animation, instead use either Standard or Film settings.\\n\\nCredit: Settings based upon suggestions provided at Rokoding.com.",
+      "PresetName" : "Roku - 1080p - Standard",
+      "PresetDescription" : "Settings optimized for use with the Roku for general movies. These are good settings to use with personally recorded videos or for videos which don't work well with the Animation or Film settings.\\n\\nCredit: Settings based upon suggestions provided at Rokoding.com.",
       "Type" : 1,
 
       "PictureWidth" : 1920,
@@ -45,10 +45,10 @@
       "VideoFramerate" : "auto",
       "VideoFramerateMode" : "cfr",
       "VideoQualityType" : 2,
-      "VideoQualitySlider" : 21,
+      "VideoQualitySlider" : 20,
       "VideoAvgBitrate" : 2500,
       "VideoPreset" : "medium",
-      "VideoTune" : "animation",
+      "VideoTune" : "none",
       "VideoProfile" : "high",
       "VideoLevel" : "4.0",
 

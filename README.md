@@ -5,6 +5,33 @@ I plan to add some common settings files, scripts, etc. that I use to automatica
 
 Enjoy!
 
+# Building Docker Image
+```
+# Full Build (with Latest Handbrake)
+docker build --no-cache=true -t redwolf3/handbrake-cli:latest .
+
+# Dev Build (with last built version of Handbrake)
+docker build -t redwolf3/handbrake-cli:latest .
+
+# Push to Repository
+docker push redwolf3/handbrake-cli:latest
+```
+
+# Running Docker Image (REAL)
+```
+docker run -it --rm -v /Volumes/Videos/MKV_Ripping:/input -v /Volumes/Videos:/output redwolf3/handbrake-cli:latest
+```
+
+# Running Docker Image (TEST)
+```
+docker run -it --rm -v /Volumes/Videos/MKV_Ripping:/input -v /Volumes/Videos/HandrakeTest:/output redwolf3/handbrake-cli:latest
+```
+
+# Running Docker Image (DEBUG)
+```
+docker run -it --rm redwolf3/handbrake-cli:latest python3 handbrake-proc.py DEBUG
+```
+
 # Credits
 
 ## Encoding Settings
